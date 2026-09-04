@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact{
+ height: 100vh;
+ background-color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.contact-1{
+    height: 100%;
+    width: 50%;
+    /* background-color: white; */
+}
+
+
+.contact-1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact-2{
+     height: 100%;
+    width: 50%;
+    /* background-color: rgb(255, 255, 255); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+ padding-left: 6%;
+
+}
+
+.contact-2 span{
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    width: 150PX;
+
+}
+
+
+.contact-2  p{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.801);
+}
+
+.contact-20{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     gap: 10px;
+}
+
+.contact-20 :nth-child(1) {
+  font-size: 20px;
+}
+
+.contact-btn {
+    padding: 10px 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 20px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.712);
+}
+
+
+.contact-btn:hover,
+.contact-21 button:hover{
+    background-color: black;
+    color: rgb(253, 174, 28);
+    font-family: sans-serif;
+}
+
+.contact-21 button{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2ps solid black;
+    font-size: 20px;
+    background-color: transparent;
+    margin-right: 18px;
+}
+
+
+@media only  screen and (min-width:375px) and (max-width:425px) {
+    .contact{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        /* background-color: red; */
+        margin-top: 480px;
+    }
+    .contact-1{
+    height: 100%;
+    width: 100%;
+    /* background-color: white; */
+}
+.contact-2{
+    width: 100%;
+    gap: 15px;
+}
+.contact-2 h1{
+    font-size: 24px;
+    margin-top: 10px;
+    /* background-color: red; */
+}
+.contact-2 span{
+    width: 100px;
+}
+
+.contact-2 p{
+ font-size: 18px;
+ /* background-color: red; */
+}
+.contact-btn{
+    font-size: 17px;
+}
+
+.contact-21 button{
+    font-size: 15px;
+}
+
+}

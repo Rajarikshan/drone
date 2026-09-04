@@ -1,0 +1,139 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+.review {
+  height: 100vh;
+  background-color: transparent;
+}
+
+
+.review-1 {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-1 p {
+  font-size: 30px;
+  color: rgba(253, 174, 28, 0.945);
+}
+
+.review-1 h1 {
+  font-size: 80px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.review-1 h2 {
+  border-bottom: 2px solid rgba(253, 174, 28, 0.945);
+  width: 70px;
+}
+
+.review-1 h3 {
+  border-bottom: 2px solid black;
+  width: 120px;
+  margin-top: 10px;
+}
+
+
+.review-2 {
+  height: 70vh;
+  width: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-22 {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  /* background-color: white; */
+  overflow: hidden; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.review-220.slider {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  transition: transform 0.6s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+}
+
+.slide img {
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.slide p{
+  width: 50%;
+  margin-top: 30px;
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.596);
+}
+
+.slide.active img{
+
+  z-index: 2;
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.slide.blur img{
+  z-index: 1;
+  filter: blur(4px);
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+
+
+ @media  screen and (min-width:375px) and (max-width:425px) {
+     
+.review{
+  margin-top: 670px;
+
+}
+
+.review-1 h1{
+  font-size: 60px;
+}
+
+.review-2{
+  width: 100%;
+  height: auto;
+  /* background-color: violet; */
+}
+.slide p{
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide img{
+  height: 150px;
+}
+ }

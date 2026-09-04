@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: transparent;
+    position: relative;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.938);
+  border-bottom: 1px solid #ddddddb6;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.534);
+}
+
+.navbar h1{
+    font-size: 40px;
+    height: 100px;
+    width: 250px;
+    font-weight: 900;
+    font-family: sans-serif;
+    display: inline;
+    /* background-color:blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 200px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    
+}
+
+.nav-links li{
+    font-size: 20px;
+    list-style: none;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: gray;
+    position: relative;
+}
+
+.nav-links a:hover{
+    color: black;
+}
+
+
+/* .nav-links a:hover::after{
+    width: 35px;
+} */
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transform: translatey(50%);
+  transition: width 0.3s ease;
+}
+
+
+
+.nav-links a.active {
+   content: "";
+  left: 0%;
+  bottom: -5px;
+  width: 0;
+  transform: translatey(50%);
+  transition: width 0.3s ease;
+}
+
+.nav-links a.active::after {
+  width: 35px;
+}
+
+.nav-links-IoMdMenu{
+    display: none;
+}
+
+/* media query mobile */
+ @media only screen and (min-width:375px) and (max-width:425px) {
+.navbar h1{
+    padding-left: 0px;
+}
+
+  .nav-links {
+    flex-direction: column;
+    align-items: start;
+    position: fixed;
+    top: 70px;
+    background:white;
+    width: 100%;
+    padding: 20px;
+    transition: transform 0.5s ease-in-out;
+    height: auto;
+    width: 100%;
+    background-color:white;
+  }
+
+  .nav-links li:hover{
+    color: black;
+    padding: 10px 10px ;
+    width: 100%;
+  }
+
+ .nav-links-IoMdMenu{
+    display: flex;
+    font-size: 35px;
+    position: absolute;
+    right: 30px;
+ }
+
+
+ }
